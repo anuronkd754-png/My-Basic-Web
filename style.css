@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: black;
+    font-family: Arial;
+    overflow: hidden;
+    color: white;
+}
+
+/* Animated stars background */
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/stardust.png");
+    animation: move 60s linear infinite;
+    opacity: 0.4;
+}
+
+@keyframes move {
+    from { background-position: 0 0; }
+    to { background-position: 10000px 10000px; }
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    text-align: center;
+    padding: 40px;
+    border: 2px solid cyan;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0 0 20px cyan;
+    transition: 0.5s;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid cyan;
+    box-shadow: 0 0 20px cyan;
+}
+
+.glow {
+    text-shadow: 0 0 10px cyan, 0 0 20px blue;
+}
+
+.subtitle {
+    color: #aaa;
+}
+
+/* Sci-fi mode */
+.scifi {
+    background: black;
+    box-shadow: 0 0 40px purple;
+    border-color: purple;
+}
